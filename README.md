@@ -30,8 +30,40 @@ The project consists of the following key components:
 - 📑 **HTML, CSS, JavaScript** (Front-end)
 - 📦 **WAR File** (Packaging for Deployment)
 
-## 🚀 How to Run the Project | วิธีการรันโปรเจค
+## 🚀 How to Run the Project  
 
-### 1. Clone the repository:  
-   ```bash
-   git clone https://github.com/yourusername/online-school-website.git
+## 🚀 How to Run the Project
+
+### 1️⃣ Install Required Software
+Make sure you have the following installed:
+- ✅ **XAMPP** (for Apache and MySQL)
+- ✅ **Apache Tomcat** (for deploying `.war` files)
+- ✅ **Java JDK** (for Java Servlets)
+- ✅ **MySQL** (for the database)
+(If you prefer, you can also use **MySQL Workbench** for a graphical interface to manage MySQL)
+
+### 2️⃣ Start Required Services
+1. Open **XAMPP** and start service:
+   - **Apache** ✅
+   - **MySQL** ✅
+2. Start **Apache Tomcat**:
+   - Go to the `Tomcat/bin` folder and run:
+     - `startup.bat` (Windows)
+     - `startup.sh` (Mac/Linux)
+   - Tomcat should run at [`http://localhost:8080`](http://localhost:8080).
+
+### 3️⃣ Deploy `.war` File
+1. Open **Tomcat Manager** at [`http://localhost:8080/manager`](http://localhost:8080/manager).
+2. Log in with the default credentials (`admin/password`).
+3. Scroll to **WAR file to deploy**, select **`tanachod_school_V7.war`**, and click **Deploy**.
+4. The website will be available at: [`http://localhost:8080/tanachod_school_V7/`](http://localhost:8080/tanachod_school_V7/).
+
+### 4️⃣ Set Up the MySQL Database
+1. Open **XAMPP** and go to **phpMyAdmin** at [`http://localhost/phpmyadmin`](http://localhost/phpmyadmin).
+2. Create a new database named `tanachod_school` (or whatever the name is used in your project).
+3. Import the provided `.sql` file into the newly created database.
+4. Ensure the database credentials match what’s configured in your project (e.g., in `web.xml` or database configuration file).
+
+After completing these steps, your project should be up and running!
+
+
